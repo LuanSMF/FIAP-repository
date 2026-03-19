@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tags e estruturas - Aula 03</h1>
+    <h2>Exemplos de links</h2>
+    <!-- link relativo, leva o usuário para uma página detro do meu site-->
+    <a href="pages/contato.html" title="Ir para contato!1">Contato</a>
+    <!-- link absoluto, leva o usuário para fora do meu site-->
+    <a href="https://on.fiap.com.br" target="_blank">Site da Fiap</a>
+    <!-- link interno ou ancora, faz o usuário "caminhar" dentro da página-->
+    <a href="#rodape" >Ir para o rodapé da página</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iste dolor quos reiciendis cupiditate id minima beatae quod atque esse!</p>
+    <footer id="rodape">Fim do Site</footer>
+
+    <hr>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend> Informe seus dados</legend>
+        <h2>Cadastro Pessoal</h2>
+        <p>*Obrigatorios</p>
+
+        <h3>Nome e Sobrenome: *</h3>
+        <label for="nome_sobrenome">Nome e Sobrenome</label>
+        <input type="text" name="nome_sobrenome" placeholder="Digtite aqui...." required>
+
+        <h3>Informe seu genero: *</h3>
+        <input type="radio" name="genero" value="masculino" required>
+        <label for="genero">Masculino</label><br>
+        <input type="radio" name="genero" value="feminino" required>
+        <label for="genero">Feminino</label><br>
+        <input type="radio" name="genero" value="outro" required>
+        <label for="genero">Outro</label><br>
+
+        <h3>Diga quais meios de transporte usas:</h3>
+        
+        <input type="checkbox" name="transportes" value="metro">
+        <label for="transportes">Metrô</label> <br>
+        <input type="checkbox" name="transportes" value="carro">
+        <label for="transportes">Carro</label><br>
+        <input type="checkbox" name="transportes" value="bike">
+        <label for="transportes">Bike</label><br>
+        <input type="checkbox" name="transportes" value="DeApe">
+        <label for="transportes">De A pé</label><br>
+
+        <h3>Selecione o sue tamanho de camisa:</h3>
+        <select name="tamanho" id="">
+            <option value="G">Grande</option>
+            <option value="M">Médio</option>
+            <option value="P">Pequeno</option>
+        </select>
+        <br>
+        <textarea name="opiniao">digite sua opinião ...</textarea>
+        
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+
+    <img src="doguinho.gif" alt="Gif de um doguinho dancando!" width="200px">
+
+</body>
+</html>
