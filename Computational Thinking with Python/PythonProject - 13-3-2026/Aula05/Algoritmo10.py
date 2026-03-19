@@ -1,0 +1,5 @@
+A =int(input('Informe um número inteiro com 3 digitos:'))
+texto= str(A)
+print(texto[2])
+print(texto[1])
+print(texto[0])
