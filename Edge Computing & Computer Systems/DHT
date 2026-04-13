@@ -1,0 +1,26 @@
+#include <DHT.h>
+#define dhtpin 7
+#define dhtype DHT11
+int temp = 0;
+int umi = 0;
+
+//Tipo do objeto, Nome do objeto
+DHT dht(dhtpin, dhtype);
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  dht.begin();
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  temp = dht.readTemperature();
+  umi = dht.readHumidity();
+
+  Serial.println("Temperatura: " +String(temp));
+  delay(2000);
+  Serial.println("Umidade: " + String(umi));
+  delay(2000);
+}
