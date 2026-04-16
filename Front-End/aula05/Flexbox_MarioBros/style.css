@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+#personagens, #viloes, #final {
+    border-bottom: 30px solid #5ED338;
+}
+
+#banner { background-color: #F43443; }
+#inicio { background-color: #E8E8E0; }
+#personagens { background-color: #819DF9; }
+#poderes { background-color: #E7D5AB; padding: 50px 0; }
+#viloes { background-color: #555250; border-color: #FB3603; }
+#final { background-color: #819DF9; }
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#inicio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.personagens-lista{
+    display:flex;
+    /* justify-content - Alinhamento Horizontal*/
+    justify-content:space-evenly;
+}
+
+.botao{
+    background:#62c82c;
+    color: ###fff;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 30px;
+    text-decoration:none;
+    width: 270px;
+    text-align:center;
+    margin: 20px 0;
+}
+
+.personagens-item{
+    width: 170px;
+    text-align: center;
+    img{
+        border-radius:100%;
+    }
+
+    h4{
+        background-color: #4d6dd2;
+        border-radius:10px;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        padding:5px 0;
+        margin-top: 10px;       
+    }
+}
+
+.poderes-lista{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    max-width:800px;
+    margin:0 auto;
+    gap: 40px;
+}
+
+.poderes-item{
+    border:10px solid #e7b300;
+    width:120px;
+}
