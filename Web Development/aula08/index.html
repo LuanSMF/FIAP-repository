@@ -6,6 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="/ex.js"></script>
+    <main class="container">
+        <h1>Lista de Alunos</h1>
+
+        <section class="card">
+            <h2>Cadastrar Aluno</h2>
+            
+            <input type="text" id="nome" placeholder="Nome do Aluno">
+            <input type="number" id="idade" placeholder="Idade">
+            <input type="text" id="curso" placeholder="Curso">
+
+             <button id="btnAdicionarFinal">Adicionar no final</button>
+             <button id="btnAdicionarInicio">Adicionar no inicio</button>
+        </section>
+        <section class="card">
+            <h2>Ações</h2>
+
+            <button id="btnRemoverPrimeiro">Remover primeiro</button>
+            <button id="btnRemoverUltimo"> Remover último</button>
+            <button id="btnMostrarParte">Mostrar 2 primeiros</button>
+        </section>
+        <section>
+            <h2>Buscar ou remover alunos</h2>
+
+            <input type="text" id="busca" placeholder="Digite o nome">
+
+            <button id="btnBuscar">Buscar aluno</button>
+            <button id="btnRemoverNome">Remover pelo nome</button>
+        </section>
+        <section>
+            <h2>Resultado</h2>
+
+            <p>Total de alunos: <span id="total">0</span></p>
+
+            <ul id="listaAlunos"></ul>
+        </section>
+        <section class="card"></section>
+        <section class="card"></section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
